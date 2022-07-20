@@ -446,6 +446,9 @@
         gallery__iamges[0].style.display = "flex";
         body.style.overflow = "hidden";
         index = 0;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[1].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -453,6 +456,9 @@
         body.style.overflow = "hidden";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 1;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[2].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -460,6 +466,9 @@
         body.style.overflow = "hidden";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 2;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[3].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -467,6 +476,9 @@
         gallery__iamges[3].style.display = "flex";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 3;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[4].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -474,6 +486,9 @@
         gallery__iamges[4].style.display = "flex";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 4;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[5].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -481,6 +496,9 @@
         gallery__iamges[5].style.display = "flex";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 5;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[6].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -488,6 +506,9 @@
         gallery__iamges[6].style.display = "flex";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 6;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[7].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -495,6 +516,9 @@
         gallery__iamges[7].style.display = "flex";
         window.scrollTo({ top: 0, behavior: "smooth" });
         index = 7;
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[8].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -502,6 +526,9 @@
         gallery__iamges[8].style.display = "flex";
         index = 8;
         window.scrollTo({ top: 0, behavior: "smooth" });
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[9].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -509,6 +536,9 @@
         gallery__iamges[9].style.display = "flex";
         index = 9;
         window.scrollTo({ top: 0, behavior: "smooth" });
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[10].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -516,6 +546,9 @@
         gallery__iamges[10].style.display = "flex";
         index = 10;
         window.scrollTo({ top: 0, behavior: "smooth" });
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       images[11].addEventListener("click", () => {
         gallery.style.display = "flex";
@@ -523,6 +556,9 @@
         gallery__iamges[11].style.display = "flex";
         index = 11;
         window.scrollTo({ top: 0, behavior: "smooth" });
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
       });
       next.addEventListener("click", () => {
         if (index == 11) {
@@ -551,6 +587,9 @@
         for (i = 0; i < gallery__iamges.length; i++) {
           gallery__iamges[i].style.display = "none";
           body.style.overflow = "visible";
+        }
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "flex";
         }
       });
     </script>
