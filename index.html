@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gohar Aloyan</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        transition: 0.5s;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url("./Images/pexels-johannes-plenio-1103970.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+      }
+      div.images {
+        width: 100%;
+        padding: 1% 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      div.images div {
+        width: 280px;
+        height: 280px;
+        cursor: pointer;
+        overflow: hidden;
+        animation: animate 2s ease-in-out;
+      }
+
+      div.images div img {
+        width: 280px;
+        height: 280px;
+        cursor: pointer;
+      }
+      div.images div:nth-child(1):hover::before {
+        content: "Armenia, Vayoc dzor, Zedea, 2018";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1rem;
+      }
+
+      div.images div:nth-child(2):hover::before {
+        content: "Armenia, Vayoc dzor, Yegheghnadzor, 2018";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(3):hover::before {
+        content: "Novosibirsk, Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(4):hover::before {
+        content: "Novosibirsk, Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(5):hover::before {
+        content: "Provence-Alpes-Cote d'Azur, France'";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(6):hover::before {
+        content: "Nizhni Novgorod, Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(7):hover::before {
+        content: "Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(8):hover::before {
+        content: "Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(9):hover::before {
+        content: "Russko-Polyansky District";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(10):hover::before {
+        content: "Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(11):hover::before {
+        content: "Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+      }
+      div.images div:nth-child(12):hover::before {
+        content: "Nizhni Novgorod, Russia";
+        position: absolute;
+        min-width: 280px;
+        max-width: 380px;
+        height: 280px;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.671),
+          rgba(128, 128, 128, 0.11),
+          rgba(0, 0, 0, 0.801)
+        );
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1.3rem;
+        flex-wrap: wrap;
+      }
+
+      .gallery {
+        width: 100%;
+        min-height: 100vh;
+        max-height: 130vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.705);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .gallery p {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.4rem;
+        color: orange;
+        font-weight: 700;
+      }
+      div.gallery div {
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      div.gallery div img {
+        width: 500px;
+        height: 500px;
+        cursor: pointer;
+      }
+      span {
+        width: 249px;
+        height: 500px;
+        display: flex;
+        position: absolute;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .previous {
+        transform: translateX(-150px);
+      }
+      .next {
+        transform: translateX(150px);
+      }
+      @keyframes animate {
+        0% {
+          transform: translateY(-1000px);
+        }
+        50% {
+          transform: translateY(-500px);
+        }
+
+        100% {
+          transform: translateY(-0px);
+        }
+      }
+    </style>
+    <div class="images">
+      <div>
+        <img src="Images/img1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img2.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img3.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img4.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img5.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img14.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img6.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img7.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img8.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img9.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img10.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img12.jpg" alt="" />
+      </div>
+    </div>
+    <div class="gallery">
+      <p id="close">close</p>
+      <span class="previous"></span>
+      <span class="next"></span>
+      <div>
+        <img src="Images/img1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img2.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img3.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img4.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img5.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img14.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img6.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img7.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img8.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img9.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img10.jpg" alt="" />
+      </div>
+      <div>
+        <img src="Images/img12.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      let images = document.querySelectorAll(".images > div");
+      let gallery__iamges = document.querySelectorAll(".gallery > div");
+      let gallery = document.querySelector(".gallery");
+      let closer = document.querySelector(".gallery > p");
+      let body = document.querySelector("body");
+      let previous = document.querySelector(".previous");
+      let next = document.querySelector(".next");
+      let index = 0;
+
+      images[0].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        gallery__iamges[0].style.display = "flex";
+        body.style.overflow = "hidden";
+        index = 0;
+      });
+      images[1].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        gallery__iamges[1].style.display = "flex";
+        body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 1;
+      });
+      images[2].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        gallery__iamges[2].style.display = "flex";
+        body.style.overflow = "hidden";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 2;
+      });
+      images[3].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[3].style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 3;
+      });
+      images[4].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[4].style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 4;
+      });
+      images[5].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[5].style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 5;
+      });
+      images[6].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[6].style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 6;
+      });
+      images[7].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[7].style.display = "flex";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        index = 7;
+      });
+      images[8].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[8].style.display = "flex";
+        index = 8;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      images[9].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[9].style.display = "flex";
+        index = 9;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      images[10].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[10].style.display = "flex";
+        index = 10;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      images[11].addEventListener("click", () => {
+        gallery.style.display = "flex";
+        body.style.overflow = "hidden";
+        gallery__iamges[11].style.display = "flex";
+        index = 11;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      next.addEventListener("click", () => {
+        if (index == 11) {
+          index = 0;
+          gallery__iamges[index].style.display = "flex";
+          gallery__iamges[11].style.display = "none";
+        } else {
+          index++;
+          gallery__iamges[index].style.display = "flex";
+          gallery__iamges[index - 1].style.display = "none";
+        }
+      });
+      previous.addEventListener("click", () => {
+        if (index == 0) {
+          index = 11;
+          gallery__iamges[index].style.display = "flex";
+          gallery__iamges[0].style.display = "none";
+        } else {
+          index--;
+          gallery__iamges[index].style.display = "flex";
+          gallery__iamges[index + 1].style.display = "none";
+        }
+      });
+      closer.addEventListener("click", () => {
+        gallery.style.display = "none";
+        for (i = 0; i < gallery__iamges.length; i++) {
+          gallery__iamges[i].style.display = "none";
+          body.style.overflow = "visible";
+        }
+      });
+    </script>
+  </body>
+</html>
